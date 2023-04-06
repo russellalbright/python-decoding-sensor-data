@@ -20,12 +20,10 @@ house_info=HouseInfo(data)
 test_area=1
 recs =  house_info.get_data_by_area("id",rec_area=test_area)
 print("\nHouse sensor records for area {} = {}".format(test_area, len(recs)))
-# print("\tMaximum: {0}, Minimum: {1} temperatures".format(max(recs), min(recs)))
 test_data=datetime.strptime("5/9/20","%m/%d/%y")
 recs = house_info.get_data_by_date("id",rec_date=test_data)
 print("\nHouse sensor records for date: {} = {}".format(
      test_data.strftime("%m/%d/%y"), len(recs)))
-# print("\tMaximum: {0}, Minimum: {1} temperatures".format(max(recs), min(recs)))
 
 # Module 3 code here:
 
